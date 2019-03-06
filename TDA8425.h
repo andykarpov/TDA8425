@@ -15,7 +15,7 @@ class TDA8425 {
 	public:
 		TDA8425();
 		virtual void begin(void);
-		virtual void setMute(const bool mute);
+		virtual void setMuteChannel(const bool mute, const byte channel);
 		virtual void setVolume(const int left, const int right);
 		virtual void setBassTreble(const int bass,const int treble);
 };
